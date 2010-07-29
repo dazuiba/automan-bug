@@ -901,14 +901,12 @@ this.Element = domplate(Firebug.Rep,
         if (isElementMathML(elt))
             CopyElement = "CopyMathML";
 
-        var items=[{label: CopyElement, command: bindFixed(this.copyHTML, this, elt)}];
+        var items=[{label: "Copy CSS Path", id: "fbCopyCSSPath", command: bindFixed(this.copyCSSPath, this, elt) },
+            "-",{label: CopyElement, command: bindFixed(this.copyHTML, this, elt)}];
         if (!isElementSVG(elt) && !isElementMathML(elt))
             items.push({label: "CopyInnerHTML", command: bindFixed(this.copyInnerHTML, this, elt) });
 
         return items.concat([
-            {label: "CopyXPath", id: "fbCopyXPath", command: bindFixed(this.copyXPath, this, elt) },
-            {label: "Copy CSS Path", id: "fbCopyCSSPath", command: bindFixed(this.copyCSSPath, this, elt) },
-            "-",
             {label: "ShowEventsInConsole", id: "fbShowEventsInConsole", type: "checkbox", checked: monitored,
              command: bindFixed(toggleMonitorEvents, FBL, elt, null, monitored, context) },
             "-",

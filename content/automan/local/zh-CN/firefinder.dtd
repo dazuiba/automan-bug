@@ -1,0 +1,8 @@
+<!ENTITY showfirefinder "显示AutoMan-finder">
+<!ENTITY firefindelement "Firefind Element">
+<!ENTITY firefinderautoselect "鼠标选取模式">
+<!ENTITY firefinderclear "清除">
+<!ENTITY firefinderhide "隐藏">
+<!ENTITY firefinderautoselectelement "启用后,  试试用鼠标在页面上移动一下, 是不是很眩?">
+<!ENTITY firefinderclearresults "清除过滤结果">
+<!ENTITY firefinderhidefirebug "隐藏Firebug">
