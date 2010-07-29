@@ -1,37 +1,27 @@
 <?xml version="1.0"?>
-
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>come2u@gmail.com</em:id>
-    <em:version>0.8</em:version>
-    <em:type>2</em:type>
-
-    <!-- Any suitably modern toolkit application -->
-    <em:targetApplication>
-      <Description>
-        <em:id>toolkit@mozilla.org</em:id>
-        <em:minVersion>1.9.2</em:minVersion>
-        <em:maxVersion>1.9.3.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-
-    <!-- Firefox -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>3.6</em:minVersion>
-        <em:maxVersion>3.7.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-
-    <em:name>Automan-Bug</em:name>
-    <em:description>Automan Test Tools</em:description>
-    <em:creator>come2u</em:creator>                                       
-    <em:iconURL>chrome://firebug/skin/firebug32.png</em:iconURL>
-    <em:homepageURL>http://automan.taobao.net</em:homepageURL>
-    <em:updateURL>http://automan.taobao.net/tools/automan-bug/0.1/update.rdf</em:updateURL>
-    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDdk7eOPk0RIRtces8JJWYW6yPfBwsxnE3+5em4LocKjUvL3DkfTIc6owjOjpaGmi+Erv6kjPAI7kWCmPM/j+yTSAqbLJG2TOsff+fBW3HYPvrzXAy3Gnga8JaJ5CWF8BSXRm95VAZ4rsMZfHX0kEWHQcrDjseuz8m/0fZXBfpJUQIDAQAB</em:updateKey>
-  </Description>
-</RDF>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$0ISHy3"
+                   em:id="toolkit@mozilla.org"
+                   em:minVersion="1.9.2"
+                   em:maxVersion="1.9.3.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="come2u@gmail.com"
+                   em:version="0.8"
+                   em:type="2"
+                   em:name="Automan-Bug"
+                   em:description="Automan Test Tools"
+                   em:creator="come2u"
+                   em:iconURL="chrome://firebug/skin/firebug32.png"
+                   em:homepageURL="http://automan.taobao.net"
+                   em:updateURL="http://automan.taobao.net/tools/automan-bug/0.1/update.rdf"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDD4lUj6M8fEOoi/iuhx5/njWEY791hB2pNVGAcck/wrkhkq0KGMmDrbyV4/QsTpoD3lVm3pP/3lJYrGTjaNxR0sHpLrnSJsYKu+pe4wXGBF7+SQIec63tnSK7uCXcWuWjz3zit2TQIdY3vK/pEaeUUU+1jv8juEEtFQsKWfItzWwIDAQAB">
+    <em:targetApplication RDF:resource="rdf:#$0ISHy3"/>
+    <em:targetApplication RDF:resource="rdf:#$5ISHy3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$5ISHy3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.6"
+                   em:maxVersion="3.7.*" />
+</RDF:RDF>

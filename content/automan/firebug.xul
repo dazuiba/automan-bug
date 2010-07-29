@@ -3,8 +3,7 @@
 <!DOCTYPE window SYSTEM "chrome://automan/locale/firefinder.dtd">
 <overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
-		<script type="application/x-javascript" src="dLite.js" />
-		<script type="application/x-javascript" src="firebug.js" />
+		<script type="application/x-javascript" src="dLite.js" />   
 		
 		<commandset id="mainCommandSet">
 			<command id="cmd_firefinderAutoSelectButton" key="firefinder-auto-select-key" oncommand="Firebug.firefinderModel.autoSelect(FirebugContext)"/>
@@ -14,12 +13,12 @@
 
 	    <toolbar id="fbToolbar" align="center">
 	        <hbox id="fbToolbarInner" insertbefore="fbDetachButton" flex="1" align="center">
-	            <hbox id="fbfirefinderButtons" insertafter="fbNetButtons">
+	            <hbox id="fbfirefinderButtons" insertbefore="fbScriptButtons">
 	                <toolbarseparator/>
-					<toolbarbutton id="firefinderAutoSelectButton" label="&firefinderautoselect;" class="toolbar-text-button" tooltiptext="&firefinderautoselectelement;" command="cmd_firefinderAutoSelectButton"/>
-					<toolbarbutton id="firefinderClearButton" label="&firefinderclear;" class="toolbar-text-button" tooltiptext="&firefinderclearresults;" command="cmd_firefinderClearButton"/>
-					<toolbarbutton id="firefinderHideButton" label="&firefinderhide;" class="toolbar-text-button" tooltiptext="&firefinderhidefirebug;" command="cmd_firefinderHideButton"/>
-	           </hbox>
+				 				 <toolbarbutton id="firefinderAutoSelectButton" label="&firefinderautoselect;" class="toolbar-text-button" tooltiptext="&firefinderautoselectelement;" command="cmd_firefinderAutoSelectButton"/>
+									<toolbarbutton id="firefinderClearButton" label="&firefinderclear;" class="toolbar-text-button" tooltiptext="&firefinderclearresults;" command="cmd_firefinderClearButton"/>
+									<toolbarbutton id="firefinderHideButton" label="&firefinderhide;" class="toolbar-text-button" tooltiptext="&firefinderhidefirebug;" command="cmd_firefinderHideButton"/>
+		          </hbox>
 	       </hbox>
 	    </toolbar>
 	

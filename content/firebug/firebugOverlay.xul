@@ -234,7 +234,7 @@
                                         <toolbarbutton id="fbToggleHTMLEditing" label="&firebug.Edit;" class="toolbar-text-button"
                                             tooltiptext="&firebug.EditHTMLTooltip;" command="cmd_toggleHTMLEditing"/>
                                     </hbox>
-
+                                            
                                     <hbox id="fbCSSButtons" collapsed="true">
                                         <toolbarseparator class="fbPanelSpecificButtonsSeparator"/>
                                         <toolbarbutton id="fbToggleCSSEditing" label="&firebug.Edit;" class="toolbar-text-button"
